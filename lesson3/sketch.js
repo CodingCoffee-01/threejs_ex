@@ -425,6 +425,10 @@ function render() {
 
   group.rotation.y += ( targetRotation - group.rotation.y ) * 0.05;
 
+  group.rotation.x += 0.01;
+
+  group.rotation.z += 0.01;
+  
   camera.lookAt( cameraTarget );
 
   renderer.clear();
